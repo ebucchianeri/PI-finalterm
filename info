@@ -1,0 +1,20 @@
+INSERIMENTO VALORI:
+I punteggi/risultati elaborati dal programma sono composti da 40 colpi massimi. L'oggetto risultato non contiene informazioni sul numero di colpi effettuati, mentre il Bersaglio contiene esattamente 40 colpi e solo all'inserimento del 40esimo sara' possibile inserire i valori nelle textarea.
+
+Esistono punteggi vuoti e punteggi reali, di allenamento o di gara e tutti devono contenere la data; i punteggi vuoti servono solo per contenere annotazioni e non hanno informazioni sui decimali o sugli interi; i punteggi reali contengono interi e/o decimali. 
+I punteggi di allenamento possono contenere tutte le informazioni possibili ma solo i valori numerici e le annotazioni saranno visualizzati. I punteggi di gara devono necessariamente contenere nome della gara e luogo della gara e almeno gli interi.
+
+I campi interi e decimali possono essere riempiti creando un oggetto Bersaglio. Il bersaglio memorizza informazioni colpo per colpo, mostrando in ogni momento i colpi inseriti, i totali e il colpo attuale. Raggiunti i 40 colpi e' possibile inserire i dati nei campi della finestra di inserimento valori premendo SALVA.
+
+MODIFICA:
+Tutti i punteggi/risultati sono modificabili.
+Se al punteggio non e' associato alcun Bersaglio, la modifica comporta la creazione di un nuovo oggetto Risultato e l'eliminazione di quello vecchio. Se il risultato da modificare contiene delle annotazioni esse non saranno riportate nel form e dovranno essere inserite da nuovo.
+Per quanto riguarda i punteggi a cui e' associato un Bersaglio valgono le indicazioni sopra, solo che se non si aggiunge un nuovo bersaglio sara' mantenuto il precedente e non sara' verificata la corrispondenza valori inseriti – valori calcolati dal bersaglio. (INCONSISTENZA)
+
+Il bersaglio non e' modificabile e ne' visibile dalla modifica di un punteggio. Esso quindi puo' solo essere ricreato da nuovo dopo il primo inserimento.
+
+STATISTICHE:
+Le statistiche sono calcoli e grafici costruiti solo su punteggi reali, tutti i punteggi vuoti non sono tenuti in considerazione. Se le statistiche sono richieste su un insieme di valori di cui almeno uno e' un risultato con interi, saranno mostrati 3 pannelli di cui 2 grafici.
+
+
+Se le statistiche sono richieste su un solo risultato allora esso deve contenere un bersaglio, in tal caso sara' visualizzato un grafo sui colpi singoli sparati.
